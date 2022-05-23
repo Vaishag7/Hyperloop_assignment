@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>FORM</title>
+   <link rel="stylesheet" href="formstyle.css">
+   </head>
+   <body>
+       <form action="results.html" method="GET" enctype="multipart/form-data"></form>>
+       <div class="container">
+            
+           <div class="title">Registration</div>
+           
+           <div>
+               <label for="name">Name</label>
+               <input type="text" name="name" id="name" required placeholder="name"> 
+           </div>
+           <div>
+            <label for="roll">Roll number</label>
+            <input type="text" name="roll" id="roll" required placeholder="roll number">
+            </div>
+           <div>
+               <label for="email">Email address</label>
+               <input type="email" name="email" id="email" required placeholder="email">
+           </div>
+           <div>
+               <label for="phone">Phone number</label>
+               <input type="tel" name="phone" id="phone" pattern="[789][0-9]{9}" placeholder="phone">
+           </div>
+           <div>
+               Subsystem
+               <div>
+                   <label for="Mechanical">Mechanical</label>
+                   <input type="checkbox" name="mechanical" id="mechanical">
+               </div>
+               <div>
+                <label for="Electrical">Electrical</label>
+                <input type="checkbox" name="electrical" id="electrical">
+                </div>
+                <div>
+                    <label for="non-technical">Non Technical</label>
+                    <input type="checkbox" name="non-technical" id="non-technical">
+                </div>
+           </div>
+           <div>
+               <label for="Department">Department</label>
+               <select name="Department" id="department">
+                   <option value="Computer-Science">Computer Science</option>
+                   <option value="Electrical">Electrical</option>
+                   <option value="Mechanical">Mechanical</option>
+                   <option value="Chemical">Chemical</option>
+                   <option value="Civil">Civil</option>
+                   <option value="MEMS">MEMS</option>
+                   <option value="ESED">ESED</option>
+                   <option value="DSE">DSE</option>
+               </select>
+           </div>
+           <div>
+               <label for="Comments">Comments</label>
+               <textarea id="comments" name="comments"></textarea>
+           </div>
+            <div class="button">
+                <input type="submit" value="Submit">
+
+            </div>
+            
+        </div>
+       </form>
+      
+    
+   </body>
+   </html>
